@@ -8,8 +8,33 @@
 import SwiftUI
 
 struct mainmenuView: View {
+    @State private var shouldNavigate: Bool = false
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        if !shouldNavigate{
+            ZStack{
+                Image("backgroundMain")
+                    .resizable()
+                    .scaledToFill()
+                    .foregroundStyle(.gray)
+                VStack{
+                    Spacer()
+                    Button(action: {
+                         shouldNavigate = true
+                    }) {
+                        Image("buttonMain")
+                            .resizable()
+                            .scaledToFill()
+                    }
+                    .frame(width: 300, alignment: .bottom)
+                    .padding(.bottom, 80)
+                    
+                }
+                
+            }
+        } else {
+            tutorView()
+        }
+        
     }
 }
 

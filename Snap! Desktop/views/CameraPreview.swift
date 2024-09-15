@@ -8,22 +8,26 @@
 import SwiftUI
 import AVFoundation
 
-struct CameraPreview: UIViewRepresentable {
-    @Binding var cameraVM: CameraViewModel
-    let frame: CGRect
+struct CameraPreview: NSViewRepresentable {
     
-    func makeUIView(context: Context) -> UIView {
-        let view = UIView(frame: frame)
+    @Binding var cameraVM: CameraViewModel
+    
+    func makeNSView(context: Context) -> NSView {
+        
+        let view = NSView(frame: NSRect(x: 0, y: 0, width: 1700, height: 1050))
         cameraVM.preview = AVCaptureVideoPreviewLayer(session: cameraVM.session)
-        cameraVM.preview.frame = frame
         cameraVM.preview.videoGravity = .resizeAspectFill
-        view.layer.addSublayer(cameraVM.preview)
+        cameraVM.preview.frame = view.bounds // Set preview layer frame
+        view.wantsLayer = true
+        view.layer!.addSublayer(cameraVM.preview)
+        
         return view
     }
     
-    func updateUIView(_ uiView: UIView, context: Context) {
-        cameraVM.preview.frame = frame
-        cameraVM.preview.connection?.videoRotationAngle = UIDevice.current.orientation.videoRotationAngle
+    func updateNSView(_ nsView: NSView, context: Context) {
+  
     }
 }
+
+
 

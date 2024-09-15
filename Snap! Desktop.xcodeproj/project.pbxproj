@@ -7,19 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1AA71C092C03AAE300212D04 /* mainmenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA71C082C03AAE300212D04 /* mainmenuView.swift */; };
+		1AA71C0B2C04260D00212D04 /* tutorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA71C0A2C04260D00212D04 /* tutorView.swift */; };
 		1ABF8A6D2BFC814F006C3064 /* Snap__DesktopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABF8A6C2BFC814F006C3064 /* Snap__DesktopApp.swift */; };
 		1ABF8A6F2BFC814F006C3064 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABF8A6E2BFC814F006C3064 /* ContentView.swift */; };
 		1ABF8A712BFC8150006C3064 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ABF8A702BFC8150006C3064 /* Assets.xcassets */; };
 		1ABF8A742BFC8150006C3064 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ABF8A732BFC8150006C3064 /* Preview Assets.xcassets */; };
+		1ABF8A7D2BFC8286006C3064 /* CameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABF8A7C2BFC8286006C3064 /* CameraViewModel.swift */; };
+		1ABF8A892BFC888B006C3064 /* CameraPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABF8A852BFC888B006C3064 /* CameraPreview.swift */; };
+		1ABF8A8A2BFC888B006C3064 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABF8A862BFC888B006C3064 /* CameraView.swift */; };
+		1ABF8A912BFE61A8006C3064 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABF8A902BFE61A8006C3064 /* TimerViewModel.swift */; };
+		1ABF8A982BFFA483006C3064 /* ExcerciseClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 1ABF8A972BFFA483006C3064 /* ExcerciseClassifier.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1AA71C082C03AAE300212D04 /* mainmenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainmenuView.swift; sourceTree = "<group>"; };
+		1AA71C0A2C04260D00212D04 /* tutorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tutorView.swift; sourceTree = "<group>"; };
 		1ABF8A692BFC814F006C3064 /* Snap! Desktop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Snap! Desktop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ABF8A6C2BFC814F006C3064 /* Snap__DesktopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snap__DesktopApp.swift; sourceTree = "<group>"; };
 		1ABF8A6E2BFC814F006C3064 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1ABF8A702BFC8150006C3064 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1ABF8A732BFC8150006C3064 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1ABF8A752BFC8150006C3064 /* Snap__Desktop.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Snap__Desktop.entitlements; sourceTree = "<group>"; };
+		1ABF8A7C2BFC8286006C3064 /* CameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewModel.swift; sourceTree = "<group>"; };
+		1ABF8A852BFC888B006C3064 /* CameraPreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraPreview.swift; sourceTree = "<group>"; };
+		1ABF8A862BFC888B006C3064 /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		1ABF8A902BFE61A8006C3064 /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
+		1ABF8A972BFFA483006C3064 /* ExcerciseClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ExcerciseClassifier.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +66,11 @@
 		1ABF8A6B2BFC814F006C3064 /* Snap! Desktop */ = {
 			isa = PBXGroup;
 			children = (
-				1ABF8A6C2BFC814F006C3064 /* Snap__DesktopApp.swift */,
+				1ABF8A922BFF20E7006C3064 /* ML Model */,
+				1ABF8A7B2BFC826B006C3064 /* view model */,
+				1ABF8A832BFC888B006C3064 /* views */,
 				1ABF8A6E2BFC814F006C3064 /* ContentView.swift */,
+				1ABF8A6C2BFC814F006C3064 /* Snap__DesktopApp.swift */,
 				1ABF8A702BFC8150006C3064 /* Assets.xcassets */,
 				1ABF8A752BFC8150006C3064 /* Snap__Desktop.entitlements */,
 				1ABF8A722BFC8150006C3064 /* Preview Content */,
@@ -67,6 +84,34 @@
 				1ABF8A732BFC8150006C3064 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1ABF8A7B2BFC826B006C3064 /* view model */ = {
+			isa = PBXGroup;
+			children = (
+				1ABF8A7C2BFC8286006C3064 /* CameraViewModel.swift */,
+				1ABF8A902BFE61A8006C3064 /* TimerViewModel.swift */,
+			);
+			path = "view model";
+			sourceTree = "<group>";
+		};
+		1ABF8A832BFC888B006C3064 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				1ABF8A852BFC888B006C3064 /* CameraPreview.swift */,
+				1ABF8A862BFC888B006C3064 /* CameraView.swift */,
+				1AA71C082C03AAE300212D04 /* mainmenuView.swift */,
+				1AA71C0A2C04260D00212D04 /* tutorView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		1ABF8A922BFF20E7006C3064 /* ML Model */ = {
+			isa = PBXGroup;
+			children = (
+				1ABF8A972BFFA483006C3064 /* ExcerciseClassifier.mlmodel */,
+			);
+			path = "ML Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +185,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1ABF8A6F2BFC814F006C3064 /* ContentView.swift in Sources */,
+				1ABF8A892BFC888B006C3064 /* CameraPreview.swift in Sources */,
+				1AA71C092C03AAE300212D04 /* mainmenuView.swift in Sources */,
+				1ABF8A982BFFA483006C3064 /* ExcerciseClassifier.mlmodel in Sources */,
 				1ABF8A6D2BFC814F006C3064 /* Snap__DesktopApp.swift in Sources */,
+				1ABF8A7D2BFC8286006C3064 /* CameraViewModel.swift in Sources */,
+				1ABF8A912BFE61A8006C3064 /* TimerViewModel.swift in Sources */,
+				1ABF8A8A2BFC888B006C3064 /* CameraView.swift in Sources */,
+				1AA71C0B2C04260D00212D04 /* tutorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +331,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Would like to acces camera";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -306,6 +359,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Would like to acces camera";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
